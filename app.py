@@ -16,8 +16,8 @@ import sys
 
 class SimpleLinearRegression:
     def __init__(self):
-        self.m = 0
-        self.b = 0
+        self.m = 10
+        self.b = 15
 
     def fit(self, X, y):
         pass

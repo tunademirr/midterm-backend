@@ -26,7 +26,7 @@ class SimpleLinearRegression:
         X_array = np.array(X)
         predictions = self.m * X_array + self.b
         rounded_predictions = 5 * np.round(predictions / 5)
-        return np.round(np.clip(predictions, 0, 100))
+        return np.clip(rounded_predictions, 0, 100)
 
 app = FastAPI(
     title="Student Grade Predictor API",
